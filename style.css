@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(images/mnm.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+#wrap{
+    position: relative;
+    top: 30px;
+}
+#head-h1{
+    position: relative;
+    top:15px;
+    color:azure;
+}
+#navbar{
+    position: relative;
+    left: 270px;
+    top:20px;
+}
+nav ul li{
+    display: inline-block;
+    float: left;
+}
+nav ul li a{
+    text-decoration:  none;
+    padding: 20px;
+    color: white;
+}
+#head-para {
+    position: relative;
+    left: 3px;
+    top: 200px;
+}
+#head-para h1{
+    position: relative;
+    left: -500px;
+    top: 2px;
+}
+#head-social img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius:12px;
+}
+#head-social{
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 90px;
+    /* padding: 20px; */
+    
+}
+#con1{
+    background-color: pink;
+    width: 100%;
+    height: 50vh;
+}
+#con2{
+    overflow: hidden;
+    display: inline-block;
+    background-color: black;
+    border: 2px solid red;
+}
+#con2a{
+    border: 3px solid yellow;
+    width: 100px;
+    overflow: hidden;
+}
+#con2b{
+    border: 3px solid yellow
+    
+}
+#con2c{
+    border: 3px solid yellow
+    width:30%;
+    height: 30%;
+}
