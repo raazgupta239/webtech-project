@@ -21,7 +21,7 @@ header{
 #navbar{
     position: relative;
     left: 270px;
-    top:20px;
+    top:35px;
 }
 nav ul li{
     display: inline-block;
@@ -53,6 +53,7 @@ nav ul li a{
     float: left;
     position: relative;
     left: 90px;
+    top: 30px;
     /* padding: 20px; */
     
 }
@@ -62,22 +63,127 @@ nav ul li a{
     height: 50vh;
 }
 #con2{
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    display: inline-block;
-    background-color: black;
-    border: 2px solid red;
+    /* border: 3px solid blue; */
 }
 #con2a{
-    border: 3px solid yellow;
-    width: 100px;
+    /* border: 3px solid green; */
+    position: relative;
+    top:30px;
+    left: 10px;
+    width: 590px;
+    height: 500px;
     overflow: hidden;
 }
+#con2a{
+    color: white;
+    /* font-size: 0.3em; */
+}
+#con2a p{
+    font-size: smaller;
+}
 #con2b{
-    border: 3px solid yellow
+    position: relative;
+    top: -460px;
+    left:700px;
+    /* border: 3px solid yellow */
     
 }
 #con2c{
-    border: 3px solid yellow
-    width:30%;
-    height: 30%;
+    position: relative;
+    top:-450px;
+    left:700px;
+    /* border: 3px solid red; */
 }
+#con2 img{
+    border-radius:13px  ;
+    height: 240px;
+    width: 240px;
+}
+#gallery{
+    display: inline-block;
+    
+}
+.slidershow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .middle{
+    position: relative;
+    top: 770px;
+    left: 70%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+  #bg{
+    background-color:#34495e;
+    width: 100%;
+    height: 600px;
+  }
+  .middle h1{
+    color: white;
+    position: relative;
+    top:-8px;
+  }
+  .middle h1:hover{
+    color: pink;
+    text-decoration: underline;
+  }
