@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+    echo "<center>You are logged Out!!! Please Login to continue</center>";
+    echo "<center><br> <hr><a href='login.php'>CLICK HERE TO LOGIN AGAIN</a></center>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +13,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -27,18 +37,21 @@
             <div id="navbar">
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">service</a></li>
-                        <li><a href="#about us">about us</a></li>
-                        <li><a href="#contact us">contact us</a></li>
-                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#about us">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="logout.php" target="_blank">Logout</a></li>
+                        <!-- <li><a href="signup.php" target="_blank">Sign up</a></li> -->
                     </ul>
                 </nav>
             </div>
 
         </div>
         <div id="head-para">
-            <pre><h1>    Welcome here at Henna by Sony Gupta</h1><br><br><br><p>                Get accessible and personalized henna in Austin -Texas area.</p></pre>
+            <pre><h1>Welcome <?php echo $_SESSION['username'];?></h1><br><br><br><p>                
+        
+            Get accessible and personalized henna in Austin -Texas area.</p></pre>
         </div>
     </header>
     <div id="con1">
@@ -98,7 +111,7 @@
     </div>
     <div id="gallery">
         <div class="slidershow middle">
-            <center><h1>Gallery</h1></center> 
+            <a name="gallery"><center><h1>Gallery</h1></center></a>
             <div class="slides">
               <input type="radio" name="r" id="r1" checked>
               <input type="radio" name="r" id="r2">
@@ -135,8 +148,32 @@
        
     </div>
     <footer>
-        <div id="footer1">
-
+        <div id="footer">
+           
+            <div id="footer2">
+                <a href="https://www.facebook.com/mehandiartsnepal"><img src="images/fb.jpg" alt=""></a>
+                <a href="https://www.facebook.com/mehandiartsnepal"><img src="images/insta.jpg" alt=""></a>
+            </div>
+            <div id="footer1">
+                <h2>Mehandiarts Nepal.</h2>
+            </div>
+            <div id="footer3">
+                    <nav>
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="#about us">About Us</a></li>
+                        </ul>
+                    </nav>
+                    <br><br>
+                    <nav>
+                        <ul>
+                            <li><a href="#contact us">Contact Us</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="logout.php" target="_blank">Logout</a></li>
+                        </ul>
+                    </nav>
+            </div>
         </div>
     </footer>
 </body>
