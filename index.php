@@ -30,7 +30,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="#services">Service</a></li>
                         <li><a href="#about us">About Us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="login.php" target="_blank">Login</a></li>
                         <li><a href="signup.php" target="_blank">Sign up</a></li>
                     </ul>
@@ -151,7 +151,7 @@
                     <nav>
                         <ul>
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=zcojC6PWNOQ">Service</a></li>
+                            <li><a href="#">Service</a></li>
                             <li><a href="#about us">About Us</a></li>
                         </ul>
                     </nav>
@@ -160,7 +160,7 @@
                         <ul>
                             <li><a href="#contact us">Contact Us</a></li>
                             <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="signup.php" target="_blank">Sign Up</a></li>
+                            <!-- <li><a href="signup.php" target="_blank">Sign Up</a></li> -->
                         </ul>
                     </nav>
             </div>

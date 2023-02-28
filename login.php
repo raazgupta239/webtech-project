@@ -65,12 +65,19 @@ function input_data($data)
                         <?php echo $Passworderr; ?>
                     </p>
                 </div>
-                <input type="checkbox" name="" id=""> Remember me?<a href="" id="anchor"> Forgot</a> password?
+                <input type="checkbox" name="" id=""> Remember me? <a href="" id="anchor">Forgot</a> password?
                 <br>
                 <div id="button">
                     <input type="submit" value="Login" name="submit" id="buttona">
-                    <p id="parav" style="margin-left:40px;"></p>
                 </div>
+                <!-- <div id="signup">
+                    <p>Don't have an account? <a href="signup.php">Signup</a></p>
+                </div> -->
+               <!-- <div id="error">
+                   
+                   </div> -->
+                   <div id="a"> <p>Don't have an account? <a href="signup.php">Signup</a> Here?</p></div>
+                   <p id="parav" style="margin-left:40px;"></p>
             </form>
         </div>
     </section>
@@ -78,7 +85,7 @@ function input_data($data)
 
 </html>
 <?php
-include 'databaseuser.php';
+// include 'databaseuser.php';
 include 'database.php';
 if (isset($_POST['submit'])) {
 if ($Emailerr == "" && $Passworderr == "") {
@@ -90,6 +97,8 @@ if ($Emailerr == "" && $Passworderr == "") {
     $query = mysqli_query($conn,$emailq);
     $emailcount = mysqli_num_rows($query);
     if ($emailcount==1) {
+        // if (mysqli_query($conn, $sqlis)) {
+        // $sqli ="insert into logins (email,password) values('$Email','$pass_hash')";
         $array=mysqli_fetch_assoc($query);
         $_SESSION['username']= $array['username'];
         echo "<script>";
@@ -97,13 +106,11 @@ if ($Emailerr == "" && $Passworderr == "") {
         echo "</script>";
         header("Location:home.php");
         exit();
-        // $sqlis = "insert into users (email,password) values('$Email','$Pass')";
-        // if (mysqli_query($conn, $sqlis)) {
         // } 
        
         } else {
                 echo "<script>";
-                echo "document.getElementById('parav').innerHTML='Incorrect credentials !!!<br>Please Login !!!'";
+                echo "document.getElementById('parav').innerHTML='Incorrect credentials !!!<br>Please Login correctly !!!'";
                 echo "</script>";
                 
          }

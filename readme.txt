@@ -196,3 +196,93 @@ $emailquery= "select * from registration where email='$email'";
 
 </body>
 </html>
+
+// copy of login.css
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    background-image: url(images/keshav.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#form{
+    border: 4px solid whitesmoke ;
+    background-size:cover;
+    backdrop-filter: blur(5px);
+    align-content: center;
+    border-radius: 10px;
+    background: transparent ;
+    position: relative;
+    left: 350px;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+#form form,h1{
+    color: black;
+    font-family: cursive;
+    font-weight:bolder;
+    text-align: center;
+    padding:20px;
+    /* border: whitesmoke 2px; */
+}
+h1{
+    font-weight: 1000px;
+}
+input{
+    padding: 5px;
+    border-radius: 12px;
+    background: grey;
+    color :white;
+}
+#form div{
+    padding: 10px;
+}
+#button{
+    /* background-color:black; */
+    
+    position: relative;
+    left: 40px;
+}
+#parav p{
+    color: red;
+    font-weight: bolder;
+    font-family:cursive;
+}
+#buttona{
+    background-color:;
+    color:black;
+    border-radius: 15px;
+    width: 150px;
+    padding: 4px;
+    /* font-weight: bolder; */
+    font-family:cursive;
+    background: transparent;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#buttona:hover{
+    background:gray;
+}
+#para{
+    color:rgb(255, 249, 249);
+    font-weight: bolder;
+}
+#anchor {
+    text-decoration:none;
+    font-weight: bolder;
+}
+#anchor:hover{
+    text-decoration:underline;
+    
+}

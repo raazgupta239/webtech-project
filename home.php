@@ -4,6 +4,7 @@ if(!isset($_SESSION['username'])){
     echo "<center>You are logged Out!!! Please Login to continue</center>";
     echo "<center><br> <hr><a href='login.php'>CLICK HERE TO LOGIN AGAIN</a></center>";
 }
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -151,7 +152,7 @@ if(!isset($_SESSION['username'])){
         <div id="footer">
            
             <div id="footer2">
-                <a href="https://www.facebook.com/mehandiartsnepal"><img src="images/fb.jpg" alt=""></a>
+                <a href="https://www.facebook.com/mehandiartsnepal" target="_blank"><img src="images/fb.jpg" alt=""></a>
                 <a href="https://www.facebook.com/mehandiartsnepal"><img src="images/insta.jpg" alt=""></a>
             </div>
             <div id="footer1">

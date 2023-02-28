@@ -7,7 +7,7 @@
             $Nameerr = "Name cant be empty";
         } else {
             $name = input_data($_POST['username']);
-            if (!preg_match('/^(?=.{5,10}$)(?!.*[._-]{2})[a-z][a-z0-9._-]*[a-z0-9]$/',$name)) {
+            if (!preg_match('/^[a-zA-Z][a-zA-Z0-9_.-]{2,19}$/',$name)) {
                 $Nameerr = "name format should be matched";
             }
         }
